@@ -23,7 +23,7 @@ SELECT UPPER(nombre) as nombre, precio
 FROM producto;
 
 -- 7. Llista els noms (nombre) i els preus (precio) dels productes de la taula producto, convertint els noms a minúscula.
-SELECT LOWER(nombre), precio
+SELECT LOWER(nombre) as nombre, precio as precio
 FROM producto;
 
 -- 8. Llista el nom de tots els fabricants en una columna, i en una altra columna obtingui en majúscules els dos primers caràcters del nom del fabricant (iniciales).
