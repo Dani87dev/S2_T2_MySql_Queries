@@ -164,7 +164,7 @@ ORDER BY producto.precio DESC;
 
 
 -- 33. Retorna un llistat amb el codi i el nom de fabricant (fabricante), solament d'aquells fabricants que tenen productes associats en la base de dades.
-SELECT producto.nombre, producto.precio, fabricante.nombre as fabricante
+SELECT fabricante.codigo, fabricante.nombre as fabricante
 FROM producto
          JOIN fabricante ON producto.codigo_fabricante = fabricante.codigo;
 
