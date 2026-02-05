@@ -180,7 +180,7 @@ FROM producto
 WHERE producto.nombre IS NULL;
 
 -- 36. Retorna tots els productes del fabricant Lenovo. (Sense utilitzar INNER JOIN).
-SELECT *
+SELECT producto.codigo, producto.nombre, producto.precio, producto.codigo_fabricante
 FROM producto
          RIGHT JOIN fabricante ON producto.codigo_fabricante = fabricante.codigo
 WHERE fabricante.nombre = 'Lenovo';
