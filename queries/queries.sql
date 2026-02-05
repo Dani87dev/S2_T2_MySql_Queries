@@ -174,7 +174,7 @@ FROM producto
          RIGHT JOIN fabricante ON producto.codigo_fabricante = fabricante.codigo;
 
 -- 35. Retorna un llistat on només apareguin els noms dels fabricants (fabricante) que no tenen cap producte associat.
-SELECT fabricante.nombre as fabricante, producto.nombre
+SELECT fabricante.nombre as fabricante
 FROM producto
          RIGHT JOIN fabricante ON producto.codigo_fabricante = fabricante.codigo
 WHERE producto.nombre IS NULL;
