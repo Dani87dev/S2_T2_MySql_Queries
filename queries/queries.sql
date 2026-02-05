@@ -105,7 +105,7 @@ FROM producto
          JOIN fabricante ON producto.codigo_fabricante = fabricante.codigo;
 
 -- 24. Retorna el nom, el preu i el nom del fabricant (fabricante), del producte més barat.
-SELECT producto.nombre, producto.precio, fabricante.nombre as fabricante
+SELECT producto.nombre, producto.precio, fabricante.nombre as fabricant
 FROM producto
          JOIN fabricante ON producto.codigo_fabricante = fabricante.codigo
 ORDER BY producto.precio ASC LIMIT 1;
