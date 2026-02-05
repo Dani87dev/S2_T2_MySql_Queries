@@ -60,10 +60,9 @@ FROM fabricante
 ORDER BY nombre DESC;
 
 -- 15. Llista els noms i els preus dels productes ordenats, en primer lloc, pel nom de manera ascendent i, en segon lloc, pel preu de manera descendent.
-SELECT nombre
+SELECT nombre, precio
 FROM producto
-ORDER BY nombre ASC;
-
+ORDER BY nombre ASC, precio DESC;
 
 -- 16. Retorna una llista amb les 5 primeres files de la taula fabricante.
 SELECT *
